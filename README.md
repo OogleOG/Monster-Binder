@@ -75,18 +75,3 @@ Unlock your first monster
 
 Head into battle and begin collecting them all!
 
-🎨 Screenshots
-
-(Add screenshots here once you’ve got some!)
-
-📌 Roadmap
-
-Add hover zoom / card detail view
-
-More monsters & packs
-
-Expanded battle system (2v2 or 3v3 teams)
-
-Special events and seasonal monsters
-
-Moggy reaction animations during pack reveals
