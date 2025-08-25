@@ -51,5 +51,42 @@ Players can:
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/YOUR-USERNAME/monster-binder.git
+   git clone https://github.com/OogleOG/monster-binder.git
    cd monster-binder
+
+   Run locally
+
+Option 1: Just double-click index.html (works in most browsers)
+
+Option 2: Run a local server (needed if assets don’t load)
+
+python -m http.server 8000
+
+
+Then open http://localhost:8000
+
+Play the Game!
+
+Start with 100 gold
+
+Buy your first pack from Moggy
+
+Unlock your first monster
+
+Head into battle and begin collecting them all!
+
+🎨 Screenshots
+
+(Add screenshots here once you’ve got some!)
+
+📌 Roadmap
+
+Add hover zoom / card detail view
+
+More monsters & packs
+
+Expanded battle system (2v2 or 3v3 teams)
+
+Special events and seasonal monsters
+
+Moggy reaction animations during pack reveals
