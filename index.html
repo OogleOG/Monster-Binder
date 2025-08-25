@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Monster Binder — v0.1 (Assets)</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="app">
+    <header id="topbar">
+      <div id="title">MONSTER BINDER v0.1</div>
+      <div id="gold" class="pill"><span id="goldCoin">🪙</span> <span id="goldVal">0</span></div>
+      <button id="btnMenuBinder" class="icon" title="Binder" aria-label="Binder">📕</button>
+      <button id="btnMenuShop" class="icon" title="Shop" aria-label="Shop">🏪</button>
+      <button id="btnMenuBattle" class="icon" title="Battle" aria-label="Battle">⚔️</button>
+    </header>
+
+    <main>
+      <section id="screenMenu" class="screen hidden">
+        <div class="menu-grid">
+          <button id="gotoBinder" class="menu-card">📕<div>Binder</div></button>
+          <button id="gotoShop" class="menu-card">🏪<div>Shop</div></button>
+          <button id="gotoBattle" class="menu-card">⚔️<div>Battle</div></button>
+        </div>
+      </section>
+
+      <section id="screenBinder" class="screen hidden">
+        <div class="binder-head">
+          <h2>Binder Album</h2>
+          <div id="progress" class="pill">Collected: <span id="progressVal">0</span> / 30</div>
+        </div>
+        <div class="binder">
+          <button id="prevPage" class="nav">&lt;</button>
+          <div id="binderPages" class="pages with-bg"></div>
+          <button id="nextPage" class="nav">&gt;</button>
+        </div>
+        <div id="pageIndicator" class="indicator">Page <span id="pageNum">1</span> / <span id="pageMax">4</span></div>
+      </section>
+
+      <section id="screenShop" class="screen hidden">
+        <div class="shop-stall">
+          <div class="moggy">
+            <canvas id="moggyCanvas" width="520" height="440" style="width:260px;height:220px"></canvas>
+            <div id="speech" class="speech hidden"></div>
+          </div>
+          <div class="packs">
+            <div class="pack" data-pack="basic">
+              <img class="pack-art-img" src="assets/pack_basic.png" alt="Basic Pack"/>
+              <div class="cost pill">100 🪙</div>
+              <button class="buy">Buy</button>
+            </div>
+            <div class="pack" data-pack="premium">
+              <img class="pack-art-img" src="assets/pack_premium.png" alt="Premium Pack"/>
+              <div class="cost pill">250 🪙</div>
+              <button class="buy">Buy</button>
+            </div>
+            <div class="pack" data-pack="ultra">
+              <img class="pack-art-img" src="assets/pack_ultra.png" alt="Ultra Pack"/>
+              <div class="cost pill">500 🪙</div>
+              <button class="buy">Buy</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="packOpen" class="pack-open hidden">
+          <div class="pack-stage">
+            <img id="openingPackImg" class="pack-art-img large" src="" alt="Opening Pack"/>
+            <button id="openPackBtn" class="menu-card small">Open!</button>
+          </div>
+          <canvas id="revealCanvas" width="640" height="480"></canvas>
+          <button id="closeReveal" class="menu-card small hidden">Close</button>
+        </div>
+      </section>
+
+      <section id="screenBattle" class="screen hidden">
+        <h2>Battle Arena (1v1)</h2>
+        <div id="battleSelect" class="battle-select">
+          <p>Pick a monster from your binder to battle:</p>
+          <div id="battleRoster" class="roster"></div>
+        </div>
+        <div id="battleStage" class="battle-stage hidden">
+          <div class="side">
+            <canvas id="playerMonCanvas" width="240" height="200"></canvas>
+            <div class="hpbar"><div id="hpPlayer" class="hp"></div></div>
+            <div id="playerName" class="name"></div>
+          </div>
+          <div class="side">
+            <canvas id="aiMonCanvas" width="240" height="200"></canvas>
+            <div class="hpbar"><div id="hpAI" class="hp"></div></div>
+            <div id="aiName" class="name"></div>
+          </div>
+          <div id="battleLog" class="log"></div>
+          <div id="battleActions" class="actions">
+            <button data-act="attack" class="menu-card small">Attack</button>
+            <button data-act="defend" class="menu-card small">Defend</button>
+            <button data-act="special" class="menu-card small">Special</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>

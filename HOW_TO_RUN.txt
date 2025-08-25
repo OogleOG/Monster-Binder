@@ -1,0 +1,13 @@
+Monster Binder
+===========================================================
+
+How to run:
+1) Unzip this folder.
+2) Open index.html in your browser (Chrome/Edge/Firefox/Opera GX/Safari).
+3) If your browser blocks local files, run a tiny server:
+   python -m http.server 8000
+   → http://localhost:8000
+
+What’s new:
+- Uses image assets for Moggy, pack art, binder background, and card backs.
+- Everything else is the same loop (Binder ↔ Shop ↔ Battle) with saving.
