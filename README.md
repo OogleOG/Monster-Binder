@@ -1,3 +1,6 @@
+<img width="1200" height="300" alt="image" src="https://github.com/user-attachments/assets/0b9087ff-400d-4f32-a9d7-81d548be4f9d" />
+
+
 # 🐉 Monster Binder
 
 A cartoony **web-based monster collecting game** inspired by classics like *Fight My Monster* and trading card binders.  
